@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const instance = axios.create({
-  baseURL: 'http://localhost:5500/api', // Updated to match server port
+  baseURL: 'https://assignment-9a3e-grktjfrwa-shawns-projects-f6f61110.vercel.app/api', // Updated to match server port
 });
 
 export default instance;
