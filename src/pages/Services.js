@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Services() {
   return (
@@ -13,9 +14,9 @@ function Services() {
             arrive the same day.
           </p>
           <span className="price-tag">$25</span>
-          <a href="same-day-order.html" className="cta-button small">
+          <Link to="/orders?service=Same-Day Delivery" className="cta-button small">
             Place Order
-          </a>
+          </Link>
         </div>
         <div className="service-box">
           <img src="images/nextday.jpeg" alt="Next Day Delivery" />
@@ -25,9 +26,9 @@ function Services() {
             country.
           </p>
           <span className="price-tag">$18</span>
-          <a href="same-day-order.html" className="cta-button small">
+          <Link to="/orders?service=Next-Day Delivery" className="cta-button small">
             Place Order
-          </a>
+          </Link>
         </div>
         <div className="service-box">
           <img src="images/bulk.jpeg" alt="Bulk Logistics" />
@@ -37,9 +38,9 @@ function Services() {
             enterprise clients.
           </p>
           <span className="price-tag">$99+</span>
-          <a href="same-day-order.html" className="cta-button small">
+          <Link to="/orders?service=Bulk/Business Logistics" className="cta-button small">
             Place Order
-          </a>
+          </Link>
         </div>
         <div className="service-box">
           <img src="images/international.jpeg" alt="International Shipping" />
@@ -48,9 +49,19 @@ function Services() {
             Send packages across borders with trusted global delivery partners.
           </p>
           <span className="price-tag">$50+</span>
-          <a href="same-day-order.html" className="cta-button small">
+          <Link to="/orders?service=International Shipping" className="cta-button small">
             Place Order
-          </a>
+          </Link>
+        </div>
+        <div className="service-box">
+          <img src="images/international.jpeg" alt="merch shopping" />
+          <h3>Order Merch</h3>
+          <p>
+            Order our merch and support our brand. Get delivery to your door step.
+          </p>
+          <Link to="/merch" className="cta-button small">
+            Place Order
+          </Link>
         </div>
       </div>
     </section>
